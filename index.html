@@ -5,6 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+
+/* General Reset */
+body, h1, p, table, th, td, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Table Styling */
+#table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+td {
+    font-size: 1rem;
+    color: #555;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 10px 15px;
+    }
+
+    caption {
+        font-size: 1.2rem;
+    }
+}
+
+</style>
 <body>
     <table id="table" border="1">
         <caption>JS Assignment</caption>
@@ -35,6 +129,14 @@
         <tr>
             <td>6</td>
             <td><a href="converter.html">Converter</a></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="randomGuessNumber.html">GuessNumber</a></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="randomPassword.html">RandomPasswordGenerator</a></td>
         </tr>
     </table>
 </body>
